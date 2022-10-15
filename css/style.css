@@ -3,16 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 .container{
     display: block;
-    width: 1193px;
+    width: 1000px;
     height: 100%;
     padding: 91px 124px 157px 124px;
     font-family: 'Roboto', sans-serif;
 }
 /********** container end **********/
 
-.section-2{
-    margin-bottom: 170px;
-}
+
 .main-s2{
     display: flex;
     margin-bottom: 60px;
@@ -25,16 +23,17 @@
     }
     .left-s2 .p1{
         font-size: 24px;
-        padding-right: 150px;
     } 
+    .left-s2{
+        width: 100%;
+    }
 
 /* ********************main left end****************** */
 /* ********************main right start****************** */
     .right-s2{
         position: relative;
         left: 150px;
-        top: 80px;
-
+        top: 80px;  
     }
     .right-s2 .svg1 img{
         position: relative;
@@ -86,51 +85,98 @@
 
 /* ********************Responsiv taplet 830px start****************** */
 @media screen and (max-width: 830px){
-    .container{
-        width: 100%;
-        margin: auto;
-    }
-    .photo{
-        display: none;
-    }
-    .svg1 img{
-        width: 180px;
-        height: 180px;
-    }
-    .svg2 img{
-        width: 211px;
-        height: 34px;
-    }
-    .left-s2 .p1{
-        padding-right: 0px;
-    } 
+/* ******************** section start****************** */
+/* ********************main left start****************** */
+.left-s2 :first-child{
+    font-size: 32px;
+    font-weight: 700;
 }
+.left-s2 .p1{
+    font-size: 14px;
+} 
+/* ********************main left end****************** */
+/* ********************main right start****************** */
+
+.right-s2 .svg1 img{
+    width: 181px;
+    height: 182px;
+}
+.right-s2 .svg2 img{
+    width: 211px;
+    height: 34px;
+    top: 165px;
+}
+/* ********************main right end****************** */
+/* ********************footer start****************** */
+.footer{
+    display: flex;
+    align-items: center;
+}
+.photo,.s2-text>div{
+    margin-right: 30px;
+}
+.s2-text>div{
+    display: inline-block;
+}
+.s2-text>div>:first-child{
+    font-size: 15px;
+    font-weight: 800;
+}
+.s2-text>div>:last-child{
+    font-size: 11px;
+    font-weight: 400;
+}
+}
+/* ********************footer end****************** */
+/* ******************** section end****************** */
 /* ********************Responsiv taplet 830px end****************** */
-/* ********************Responsiv taplet 375px start****************** */
+/* ********************Responsiv phone 375px start****************** */
 @media screen and (max-width: 375px){
-    .container{
-        width: 100%;
-        margin: auto;
-    }
-    .photo{
-        display: none;
-    }
-    .main-s2{
-        display: block;
-    }
-    .s2-text{
-        display: inline-block;
-    }
-    .svg1 img{
-        width: 146px;
-        height: 146px;
-    }
-    .svg2 img{
-        width: 170px;
-        height: 27px;
-    }
-    .left-s2 .p1{
-        padding-right: 0px;
-    } 
+    /* ********************section start****************** */
+.main-s2{
+    display: inline-block;}
+/* ********************main left start****************** */
+.left-s2 :first-child{
+    font-size: 26px;
+    font-weight: 700;
 }
-/* ********************Responsiv taplet 375px end****************** */
+.left-s2 .p1{
+    font-size: 12px;
+} 
+
+/* ********************main left end****************** */
+/* ********************main right start****************** */
+
+.right-s2 .svg1 img{
+    width: 170px;
+    height: 160px;
+    
+}
+.right-s2 .svg2 img{
+    width: 170px;
+    height: 28px;
+    top:150px;
+}
+/* ********************main right end****************** */
+/* ********************footer start****************** */
+.photo{
+    display: none;
+}
+.s2-text{
+    margin-top: 50px;
+}
+.s2-text>div{
+    display: inline-block;
+}
+.s2-text>div>:first-child{
+    font-size: 12px;
+    font-weight: 800;
+}
+.s2-text>div>:last-child{
+    font-size: 10px;
+    font-weight: 400;
+}
+/* ********************footer end****************** */
+/* ********************section end****************** */
+}
+/* ********************Responsiv phone 375px end****************** */
